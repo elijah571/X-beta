@@ -1,0 +1,191 @@
+  *  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    list-style: none;
+}
+body, html{
+    /* text-wrap: nowrap; */
+    overflow-x: hidden;
+    background-color:#f7f7f7 ;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box
+}
+:root {
+    --nav:#F0D6F0;
+    --search:#B366B3;
+    --hero:#E6CCE6;
+    --hero-btn:#B366B3;
+
+
+
+}
+.hero-ham{
+width: 34px;
+height: 38.87px;
+align-items: center;
+
+
+}
+.text p{
+    line-height: 58.09px;
+    font-size: #0000;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+.text h2{
+    font-size: 5rem;;
+    font-weight: 700;
+}
+.hero-section{
+    width: 100%;
+    background-color: var(--hero-btn);
+    /* justify-content: center; */
+    height:300px;
+    position: relative
+    padding: ;
+}
+.ab{
+    position: absolute;
+    right: 0;
+
+}
+.flex{
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 25rem; */
+}
+.button{
+    display: inline-block;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--hero);
+    /* color: white; */
+    background-color: white;
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+}
+.button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0%;
+    right: 0;
+    height: 100%;
+    background: var(--hero);
+    transition: .3s linear;
+    z-index: -1;
+}
+.button:hover::before{
+    width: 100%;
+    left: 0;
+}
+.button:hover{
+    color: white;
+}
+.text{
+    text-align: center;
+    
+}
+.T{
+    display: flex;
+    justify-content: center;
+}
+
+/* media query */
+
+@media (min-width: 769px) { /* Desktop screens */
+    
+    body{
+        /* background-color: #0E0E0E; */
+    }
+   
+}
+@media(max-width:1000px){
+    body{
+        background-color: orange;
+    }
+    html{
+        font-size: 53%;
+    }
+    
+}
+
+@media(max-width:991px){
+    body{
+        /* background-color: blue; */
+    }
+    html{
+        font-size: 55%;
+    }
+}
+@media screen and (max-width: 800px) {
+    body{
+        background-color: red;
+       
+    }
+   
+}
+@media(max-width:768px){
+    body{
+        background-color: orangered;
+    
+   
+    
+    
+   
+
+}
+    
+   
+
+}
+
+  
+
+@media only screen and (max-width: 1024px) {
+  
+   }
+   
+   @media only screen and (max-width: 480px) {
+     
+   }
+
+
+    @media(max-width:400px){
+        html{
+            font-size: 50%;
+
+        }
+        body{
+            background-color: red;
+        }
+        .text h2{
+            color: red;
+        }
+      
+       
+    }
+
+
