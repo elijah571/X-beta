@@ -320,6 +320,11 @@ align-items: center;
 margin-top: 40px;
 overflow: hidden; /* Ensure content doesn't overflow the hero section */
 }
+
+
+/* product section */
+
+/* product secton ends */
 .ab{
     position: absolute;
     right: 0;
