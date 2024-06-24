@@ -102,6 +102,20 @@ font-weight: 500;
 margin-bottom: 1rem;
 
 }
+.flex {
+    display: flex;
+    align-items: center; /* Align items vertically center */
+    position: relative; /* Ensure proper positioning */
+}
+.flex  img{
+
+        position: absolute;
+        width: 7%;
+        right: 5px; /* Adjust as per your design */
+        height: 100%; /* Match input height */
+        margin-right: 5px; /* Adjust spacing */
+
+}
 
 @keyframes fadeIn {
     from {
