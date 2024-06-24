@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>signup</title>
     <link rel="stylesheet" href="../X-beta/FRONTEND/styles/login.css">
 </head>
 <body>
@@ -16,27 +16,33 @@
             <p>Type your e-mail or phone number to log into your X-Beta account</p>
             <form>
                 <div class="input-group">
-                    <label for="email"></label>
+                    <label for="fname"></label>
                     
-                    <input type="email" id="email" placeholder="Email or Phone Number" name="username" required>
+                    <input type="text" id="fname" placeholder="First name*" name="fname" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="lname"></label>
+                    
+                    <input type="text" id="lname" placeholder="Last name*" name="lname" required>
                    
                 
                 </div>
                 <div class="input-group">
-                    <label for="password"></label>
+                    <label for="email"></label>
                     <div class="flex">
                         
-                    <input type="password" id="password" name="password" placeholder="Password" required>
-                    <img src="../X-beta/FRONTEND/img/arcticons_password.png" alt="">
+                    <input type="email" id="password" name="password" placeholder="Email*" required>
+                    <!-- <img src="../X-beta/FRONTEND/img/arcticons_password.png" alt=""> -->
                     </div>
                 </div>
-                <button type="submit">Log in</button>
+                <button type="submit">Sign up</button>
 
             </form>
             <a href="signp.html">
 
                 <p>
-                Dont have an account? sign up
+                have an account? log in
                 </p>
             </a>
             

@@ -28,14 +28,14 @@ body {
 .logo{
     display: flex;
     justify-content: center;
-    margin-bottom: 3rem;
+    margin-top: 4rem;
     
 
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 2rem;
     color: #000000;
 font-weight: 700;
@@ -44,46 +44,20 @@ Line-height:21px;
 }
 p{
     text-align: center;
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
+    margin-top:1rem ;
+    font-size: 1.3rem;
     color: #000000;
 font-weight: 400;
 Line-height:18px;
 
 
 }
-
-.input-group {
-    margin-bottom: 1rem;
-}
-form{
-    margin-bottom: 2.5rem;
-}
-
-
-.input-group input {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #E6CCE6;
-    background-color: #E6CCE6;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: border 0.3s;
-}
-.input-group input .confirm{
-    border: 1px solid #B366B3;
-    background-color: #B366B3;
-    color: #ffff;
-
-}
-
-
-
 button {
     width: 100%;
     padding: 0.75rem;
     border: none;
     border-radius: 5px;
+    margin-bottom: 1rem;
     background: #340034;
     color: white;
     font-size: 1.25rem;
@@ -99,37 +73,13 @@ button:hover {
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: .3rem;
+    margin-bottom: .4rem;
 }
 .x-beta a{
 font-size: 32px;
 font-weight: 500;
 /* line-height: 48px; */
-margin-bottom: 1rem;
 
-}
-.flex {
-    display: flex;
-    align-items: center; /* Align items vertically center */
-    position: relative; /* Ensure proper positioning */
-}
-.flex  img{
 
-        position: absolute;
-        width: 7%;
-        right: 5px; /* Adjust as per your design */
-        height: 100%; /* Match input height */
-        margin-right: 5px; /* Adjust spacing */
-
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
