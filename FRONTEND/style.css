@@ -1,4 +1,4 @@
-  *  {
+*  {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -595,4 +595,62 @@ overflow: hidden; /* Ensure content doesn't overflow the hero section */
        
     }
 
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #f1f1f1;
+    }
+    
+    .footer div {
+        flex: 1;
+    }
+    
+    .footer .left, .footer .center, .footer .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer .left ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .footer .left ul li {
+        margin: 5px 0;
+    }
+    
+    .footer .center a {
+        margin: 0 10px;
 
+    }
+    
+    .footer .center p {
+        margin-top: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .footer .right a {
+        text-decoration: none;
+        color: #000;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    
+    .footer .left .logo-and-list {
+        display: flex;
+        align-items: center;
+    }
+    
+    .footer .left .logo-and-list .ab {
+        width: 10px;  /* Adjust width as needed */
+        height: auto;  /* Maintain aspect ratio */
+        margin-right: 20px;  /* Space between the logo and the list */
+    }
