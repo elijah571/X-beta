@@ -439,9 +439,11 @@ overflow: hidden; /* Ensure content doesn't overflow the hero section */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 3px;
+    margin: 0 5px;
     width: 350px;
     transform: translate(0%, 40%);
+    border: 2px solid #000;
+    background-color: #fff;
   }
 
   .image {
@@ -458,6 +460,16 @@ overflow: hidden; /* Ensure content doesn't overflow the hero section */
     color: #0000;
     margin-top: 1rem;
     text-align: center;
+  }
+
+  .transparent-image {
+    position: absolute;
+    top: 110%;
+    left: 60%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    opacity: 0.1;
+    width: 350px;
+    height: 300px;
   }
 /* product secton ends */
 
