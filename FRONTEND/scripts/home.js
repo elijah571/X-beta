@@ -7,9 +7,7 @@
         nav.classList.toggle('active');
     });
 });
-
-
-JavaScript code.   
+  
 let images = document.querySelectorAll('#image-slider img');
 let currentImage = 0;
 
@@ -17,4 +15,4 @@ setInterval(() => {
   images[currentImage].style.display = 'none';
   currentImage = (currentImage + 1) % images.length;
   images[currentImage].style.display = 'block';
-}, 10000); // 3000ms = 3 seconds
+}, 3000); // 3000ms = 3 seconds
