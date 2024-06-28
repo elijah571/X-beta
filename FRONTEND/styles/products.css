@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* header */
+header{
+    width: 100%;
+    background: #F0D6F0;
+    padding: 10px;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 10px;
+}
+header nav .left-navbar .logo img{
+    width: 50px;
+   
+}
+header nav .middle-navbar{
+    background-color: #ffff;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 15px;
+
+}
+header nav .middle-navbar .icon i .bx{
+    margin-right: 5px;
+    background: #444444;
+
+}
+header nav .middle-navbar .input, input{
+    width: 100%;
+   
+}
+header nav .middle-navbar .input input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    /* padding: 5px 10px; */
+}
+header nav .middle-navbar .input input::placeholder{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 12px;
+    text-align: left;
+    border: none;
+}
+header nav .right-navbar{
+    /* width:400px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px;
+    margin-left: 10px;
+}
+header nav .right-navbar .search-btn{
+    margin-left:5px;
+    
+}
+header nav .right-navbar .search-btn button{
+    padding: 10px 20px;
+    border: none;
+    background-color: #B366B3;
+    border-radius: 15px;
+}
+header nav .right-navbar  .icons{
+    margin-left:35px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+header nav .right-navbar  .icons > div{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+header nav .right-navbar .icons .bx{
+    font-size: 30px;
+}
+header nav .right-navbar .icons button{
+    border: none;
+    background-color: transparent;
+    margin-left: 10px;
+}
+header nav .right-navbar .icons button a{
+    text-decoration: none;
+}
+.menu .bx{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+header nav .right-navbar  .icons  .clear {
+    display: none;
+} /* footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  margin-top: 3rem;
+  background-color: #f1f1f1;
+}
+
+.footer div {
+  flex: 1;
+}
+
+.footer .left, .footer .center, .footer .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer .left ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer .left ul li {
+  margin: 5px 0;
+}
+
+.footer .center a {
+  margin: 0 10px;
+
+}
+
+.footer .center p {
+  margin-top: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.footer .right a {
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer .left .logo-and-list {
+  display: flex;
+  align-items: center;
+}
+
+.footer .left .logo-and-list .ab {
+  width: 10px;  /* Adjust width as needed */
+  height: auto;  /* Maintain aspect ratio */
+  margin-right: 20px;  /* Space between the logo and the list */
+}
+
+@media screen and (max-width:1048px){
+   
+    
+    header nav .middle-navbar{
+        width: 60%;
+    }
+    header nav .right-navbar{
+        /* background-color: #ffff; */
+        display: flex;
+        justify-content: space-between;
+        gap:20px;
+        width: 400px;
+
+       
+    }
+    header nav .right-navbar  .icons{
+        /* background-color: aqua; */
+        /* width: 250px; */
+        margin-left: 10px;
+        display: flex;
+        
+    }
+    header nav .right-navbar  .icons > div{
+       width: 150px;
+        /* background-color: antiquewhite; */
+    }
+    .menu{
+        margin-left: 150px;
+    }
+    /* header nav .right-navbar  .icons .user{
+        display: none;
+
+    } */
+
+}
+@media screen and (max-width:786px) {
+    /* body{
+        background-color: #B366B3;
+    }     */
+
+    
+         .menu .bx{
+            display: block;
+         }
+
+         header nav .right-navbar  .icons{
+            position: absolute;
+            top:100px;
+            /* bottom: 100px; */
+            left: 5px;
+            display: block;
+            background-color: #B366B3;
+            padding: 10px 30px;
+            flex-direction: column;
+            align-items:center;
+            border-radius: 10px;
+            display:none;
+       }  
+       header nav .right-navbar  .icons > div{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 50px;
+        color: #ffff;
+       }
+       header nav .right-navbar  .icons > div button, a{
+            color: #ffff;
+            margin-top:5px ;
+       }
+       header nav .right-navbar  .icons  .clear    {
+            margin-left: 90px;
+            display: flex;
+            justify-self: end;
+            align-self: flex-end;
+            position:absolute;
+            left:39px;
+            top: -10px;
+            bottom: 20;
+            display: block;
+       }
+}
