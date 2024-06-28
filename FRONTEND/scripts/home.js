@@ -26,6 +26,7 @@ function slideNext(){
   slideImages[counter].style.animation = 'next2 0.5s ease-in forwards';
 }
 
+
 // Code for prev button
 prev.addEventListener('click', slidePrev);
 function slidePrev(){
