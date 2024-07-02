@@ -58,7 +58,8 @@ let productHTML ='';
 products.forEach((product) => {
     productHTML += `
         <div class="product">
-                <div class="product-img">
+            <a href="product_details.html">
+                 <div class="product-img">
                     <img src="${product.image}">
                 </div>
                 <p class="name">${product.name}</p>
@@ -67,9 +68,11 @@ products.forEach((product) => {
                 <div class="btn">
                     <button class="add-to-cart-js">Add To Cart</button>
                 </div>
+            </a>
             </div>
 
     `
 });
 
 document.querySelector(".js-product-container").innerHTML = productHTML;
+
