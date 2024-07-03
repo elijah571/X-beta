@@ -38,7 +38,6 @@ function autoSliding(){
 // Stop auto sliding when mouse is over
 const container = document.querySelector('.slide-container');
 container.addEventListener('mouseover', function(){
-
   clearInterval(deletInterval); // Stop auto sliding when mouse is over
 });
 // Resume sliding when mouse is out
