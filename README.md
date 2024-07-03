@@ -22,4 +22,4 @@ This project is a complete eCommerce web application built to demonstrate the ca
 
 ## Contact
 Olayiwola Sulaimon - osulaimon19@yahoo.com
-
+Alfred Makura - inforamaiv@gmail.com
