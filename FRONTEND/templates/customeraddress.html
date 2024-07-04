@@ -1,28 +1,29 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Address </title>
-    <link rel="stylesheet" href="styles/customeraddress.css">
+    <link rel="stylesheet" href="{% static 'css/customeraddress.css' %}">
 </head>
 <body>
     <main class="main-content">
         <section class="header">
             <div class="header-item">
-                <img src="img/contact.png" alt="Contact" class="icon">
+                <img src="{% static 'img/contact.png' %}" alt="Contact" class="icon">
                 <span>Need Help? <a href="#">Contact us</a></span>
             </div>
             <div class="header-item">
-                <img src="img/payments.png" alt="Secure Payments" class="icon">
+                <img src="{% static 'img/payments.png' %}" alt="Secure Payments" class="icon">
                 <span>Secure Payments</span>
             </div>
             <div class="header-item">
-                <img src="img/returns.png" alt="Easy Returns" class="icon">
+                <img src="{% static 'img/returns.png' %}" alt="Easy Returns" class="icon">
                 <span>Easy Returns</span>
             </div>
         </section>
-        <img src="img/X-beta.png" alt="X-beta">
+        <img src="{% static 'img/X-beta.png' %}" alt="X-beta">
         <section class="form-section">
             <h2>1. CUSTOMER ADDRESS</h2>
             <form>
@@ -72,4 +73,3 @@
     </main>
 </body>
 </html>
-
