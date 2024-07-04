@@ -10,10 +10,6 @@ class RegisterView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = RegisterSerializer
 
-class SignupView(generics.CreateAPIView):
-    queryset = User.objects.all()
-    serializer_class = RegisterSerializer
-
 class LoginView(APIView):
     def post(self, request):
         serializer = LoginSerializer(data=request.data)

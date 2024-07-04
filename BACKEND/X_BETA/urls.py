@@ -6,11 +6,13 @@ from rest_framework_simplejwt.views import (
 )
 from django.views.generic import TemplateView
 from django.contrib.auth import views as auth_views
-from .views import home
+from .views import home, signup_view, login_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
+    path('signup/', signup_view, name='signup'),
+    path('login/', login_view, name='login'),
     path('products/', TemplateView.as_view(template_name='products.html'), name='products'),
     path('product/<int:id>/', TemplateView.as_view(template_name='product_detail.html'), name='product-detail'),
     path('api/', include('products.urls')),
