@@ -18,7 +18,7 @@ def signup_view(request):
         user.save()
         login(request, user)
         return redirect('signup_success', user_id=user.id)
-        
+
     return render(request, 'signup.html')
 
 def signup_success_view(request, user_id):
@@ -26,4 +26,14 @@ def signup_success_view(request, user_id):
     return render(request, 'signup_success.html', {'user': user})
 
 def login_view(request):
+    if request.method == 'POST':
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+        user = authenticate(request, username=email, password=password)
+        if user is not None:
+            login(request, user)
+            return redirect('home')
+        else:
+            return render(request, 'login.html', {'error': 'Invalid email or password'})
+
     return render(request, 'login.html')
