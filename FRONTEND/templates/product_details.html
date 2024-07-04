@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product details</title>
-    <link rel="stylesheet" href="styles/product_details.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="/X-beta/FRONTEND/static/css/product_details.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -14,7 +14,7 @@
             <!--left navbar-->
             <div class="left-navbar">
                 <div class="logo">
-                    <img src="img/logo.png" alt="">
+                    <img src="/X-beta/FRONTEND/static/img/logo.png" alt="">
                 </div>
             </div>
             <!--middle left navbar-->
@@ -77,11 +77,15 @@
                     <div class="product-images">
                         <!--main image-->
                     <div class="image">
-                        <img src="img/car-charger-img.jpg" alt="">
+                        <img src="/X-beta/FRONTEND/static/img/car-charger-img.jpg" alt="">
                     </div>
                     <div class="mini-img">
-                        <div><img src="img/car-charger-img.jpg" alt=""></div>
-                        <div><img src="img/car-charger-img.jpg" alt=""></div>
+                        <div> 
+                            <img src="/X-beta/FRONTEND/static/img/car-charger-img.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="/X-beta/FRONTEND/static/img/car-charger-img.jpg" alt="">
+                        </div>
                     </div>
                     </div>
                     <!-- images ends -->
@@ -109,18 +113,151 @@
                     <!-- product info ends-->
                 </div>
                 <div class="right-product-section">
-                   
+                   <div class="delivery_return">
+                        <h3>DELIVERY & RETURNS</h3>
+                   </div>
+                   <div class="location-text">
+                    <h3>Choose Your Location</h3>
+                   </div>
+                   <div class="abuja">
+                    <p>Abuja</p>
+                    <select name="Location" id="address">
+                        <option value=""></option>
+                        <option value="Abuja">Abuja</option>
+                        <option value="Lagos">Lagos</option>
+                        <option value="Kano">Kano</option>
+                        <option value="Rivers">Rivers</option>
+                    </select>
+                   </div>
+                   <div class="asokoro">
+                    <p>Asokoro</p>
+                    <select name="Location" id="address">
+                        <option value=""></option>
+                        <option value="Asokoro">Asokoro</option>
+                        <option value="Kubwa">Kubwa</option>
+                        <option value="Gwagwalada">Gwagwalada</option>
+                        <option value="Kuje">Kuje</option>
+                    </select>
+                   </div>
+                   <div class="pick_up_station">
+                        <img src="img/location-img.png" alt="">
+                        <div class="station">
+                            <p>Pick up Station</p>
+                            <a href="#">Details....</a>
+                        </div>
+                   </div>
+
+                   <div class="delivery-place">
+                        <div class="img">
+                            <img src="img/place-img.png" alt="">
+                        </div>
+                        <div class="door-delivery">
+                            <p>Door delivery</p>
+                            <a href="#">Detailss....</a>
+                        </div>
+                   </div>
                 </div>
             </div>
             <!-- details -->
-             <div class="product-details"></div>
+             <div class="product-details">
+               <h2>Product details</h2>
+               <div class="details">
+                <div>
+                    <h3>Power Output:</h3>
+                    <p>Wattage: Higher wattage means faster charging. Standard USB ports typically offer 5W, while fast chargers can offer 18W, 30W, or even higher.
+                    </p>
+                    <p>Amperage: Measured in amps (A), standard USB ports offer 1A or 2.1A. Fast chargers might offer 3A or more.</p>
+                </div>
+                <div>
+                    <h3>Compatibility:</h3>
+                    <p>Ensure the charger is compatible with your device’s charging standard (e.g., Quick Charge, Power Delivery).</p>
+                    <p>Check the voltage range to ensure it fits your car’s power system (usually 12V or 24V).</p>
+                </div>
+                <div>
+                    <h3>Build Quality and Safety:</h3>
+                    <p>Look for chargers with over-current, over-voltage, over-temperature, and short-circuit protection to ensure safe charging.</p>
+
+                    <p>
+                        High-quality materials and a durable design are important for long-term use.
+                    </p>
+                </div>
+               </div>
+             </div>
             <!-- details ends-->
              <!-- customer reviews -->
-              <div class="customer-reviewa"></div>
+              <div class="customer-review">
+                <div class="customer">
+                    <h3>Customers viewed this also</h3>
+                    <a href="#">See All ...</a>
+                </div>
+
+                <div class="customers-view-container">
+                    <!--box1-->
+                    <div class="box">
+                        <div class="image">
+                            <img src="/X-beta/FRONTEND/static/img/graphic-drawer-img.jpg">
+                        </div>
+                        <p class="name">Graphic drawer</p>
+                        <p class="price">$60,450</p>
+                    </div>
+                     <!--box2-->
+                     <div class="box">
+                        <div class="image">
+                            <img src="/X-beta/FRONTEND/static/img/oraimo-img.jpg" alt="">
+                        </div>
+                        <p class="name">Oraimo TWS</p>
+                        <p class="price">$13000</p>
+                    </div>
+                      <!--box3-->
+                      <div class="box">
+                        <div class="image">
+                            <img src="/X-beta/FRONTEND/static/img/samsum-img.jpg" alt="">
+                        </div>
+                        <p class="name">Samsung Galaxy A05</p>
+                        <p class="price">$104999</p>
+                    </div>
+                       <!--box4-->
+                       <div class="box">
+                        <div class="image">
+                            <img src="/X-beta/FRONTEND/static/img/ace-img.jpg" alt="">
+                        </div>
+                        <p class="name">Ace Elec 200000 MAh</p>
+                        <p class="price">$8500</p>
+                    </div>
+                </div>
+               
+              </div>
              <!-- customer reviews ends -->
           </div>
           <!-- ends -->
            <!--Footer section-->
+           <div class="footer">
+            <div class="footer-left">
+                <div class="logo">
+                    <img src="img/logo.png" alt="X-Beta Logo" width="50">
+                </div>
+                <ul>
+                    <li><strong>X-Beta</strong></li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Help and Support</li>
+                </ul>
+            </div>
+            <div class="center">
+                <p>Follow us on our social media platforms</p>
+                <div>
+                    <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGTbC_OxfoAq5LP5zMcu1V_reTBxE12RtfwWj9JrfiuN88FDEw&s" alt="Facebook" width="24" height="24"></a>
+                    <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSINNCytXv2xJkIoaPS2VH7WUTWnZ-g2wgBhYHyy2xtMtBCPx8&s" alt="Instagram" width="24" height="24"></a>
+                    <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1QNpzD5uZc99TzEJcJpr9rjSRdVa78iNptDWaPKxD9TZPJBE&s" alt="Twitter" width="24" height="24"></a>
+                </div>
+                <p>&copy; X-Beta 2024</p>
+            </div>
+            <div class="right">
+                <a href="#">Become a Vendor</a>
+            </div>
+        </div>
+    
+    
     <script src="scripts/product_details.js"></script>    
 </body>
 </html>

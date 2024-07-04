@@ -145,6 +145,7 @@ header nav .right-navbar  .icons  .clear {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* gap: 30px; */
 }
 .product-section .product .left-product-section{
     width: 60%;
@@ -152,7 +153,8 @@ header nav .right-navbar  .icons  .clear {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 0px 15px;
+    padding:0 15px;
+    height: 369px;
 }
 .product-section .product .left-product-section .product-images{
     display: flex;
@@ -220,6 +222,236 @@ header nav .right-navbar  .icons  .clear {
     font-size: 20px;
     color: #ffff;
 }
+/* right-product-section*/
+.right-product-section{
+    background-color: #D9D9D9;
+    width: 25%;
+    border: 2px solid black;
+    /* padding: 10px; */
+}
+.right-product-section .delivery_return{
+    width: 100%;
+ border-bottom: 4px solid #ffff;
+
+}
+.right-product-section .delivery_return h3{
+    text-align: center;
+    width: 100%;
+}
+.right-product-section .location-text{
+    margin-top: 20px;
+    text-align: center;
+}
+.right-product-section .abuja,  .asokoro{
+    width: 80%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 6px;
+
+}
+.right-product-section .abuja select,  .asokoro select{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+.right-product-section .pick_up_station{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.right-product-section  img{
+    width: 60px;
+}
+.right-product-section .pick_up_station .station p{
+    margin-bottom: 30px;
+    
+}
+.right-product-section .pick_up_station .station a{
+    text-decoration: none;
+    color: #B366B3;
+    font-size: 15px;
+}
+.right-product-section .delivery-place{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.right-product-section .delivery-place a{
+    text-decoration: none;
+    color: #B366B3;
+    font-size: 15px;
+}
+
+/* right-product-section ends*/
+/* product details*/
+.product-section .product-details{
+    width: 100%;
+    background-color: #D9D9D9;
+    margin-top: 30px;
+    padding: 0 10px;
+}
+.product-section .product-details h2{
+    border-bottom: 4px solid #fff;
+    padding: 10px 5px;
+    margin: 0;
+    font-size: 18px;
+}
+.product-section .product-details .details{
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:6px
+}
+.product-section .product-details .details > div{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 10px;
+    padding:0 10px;
+}
+.product-section .product-details .details > div h3{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.product-section .product-details .details > div p{
+    line-height: 25px;
+    font-size: 14px;
+}
+/* product details ends*/
+/* reviews */
+.customer-review{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.customer-review .customer{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+.customer-review .customer a{
+    text-decoration: none;
+}
+.customer-review .customers-view-container{
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+.customer-review .customers-view-container .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.customer-review .customers-view-container .box .image{
+    border: 1px solid  #B366B3;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+   
+}
+.customer-review .customers-view-container .box .image img{
+    width: 100%;
+    transition: transform 0.2s ease;
+}
+.customer-review .customers-view-container .box .image img:hover{
+    transform: scale(1.1);
+}
+
+/* footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin-top: 5rem;
+    background-color: #f1f1f1;
+}
+
+.footer div {
+    flex: 1;
+}
+
+.footer .left, .footer .center, .footer .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .left ul {
+    list-style-type: none;
+    padding: 0;
+    list-style: none;
+}
+
+.footer .left ul li {
+    margin: 5px 0;
+   text-decoration: none;
+   list-style: none;
+}
+
+.footer .center a {
+    margin: 0 10px;
+
+}
+
+.footer .center p {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer .right a {
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer .left .logo-and-list {
+    display: flex;
+    align-items: center;
+}
+
+.footer .left .logo-and-list .ab {
+    width: 10px;  /* Adjust width as needed */
+    height: auto;  /* Maintain aspect ratio */
+    margin-right: 20px;  /* Space between the logo and the list */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* reviews  ends*/
+
 /*product section ends*/
 /*media query*/
 
@@ -264,6 +496,19 @@ header nav .right-navbar  .icons  .clear {
         display: none;
 
     } */
+
+    .product-section .product{
+    width: 100%;
+    flex-direction: column;
+}
+.product-section .product .left-product-section, .right-product-section{
+    width: 100%;
+    padding: 15px;
+    height: fit-content;
+}
+customer-review{
+    width: 100%;
+}
 
 }
 @media screen and (max-width:786px) {
@@ -333,5 +578,42 @@ header nav .right-navbar  .icons  .clear {
     font-size: 50px;
     text-align: center;
     margin-left: 170px;
+}
+/* product */
+.product-section .product{
+    width: 100%;
+    flex-direction: column;
+}
+.product-section .product .left-product-section, .right-product-section{
+    width: 100%;
+    padding: 15px;
+    height: fit-content;
+}
+
+/* .product-section .product-details */
+.product-section .product-details{
+    width: 100%;
+}
+.product-section .product-details .details{
+    width: 100%;
+    align-items: center;
+}
+/* customer review*/
+.customer-review{
+    width: 100%;
+}
+
+.customers-view-container{
+    flex-direction: column;
+}
+.footer{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+}
+.footer ul li{
+    list-style: none;
 }
 }
