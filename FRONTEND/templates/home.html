@@ -1,0 +1,155 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <title>X-BETA - Your Home of Gadgets</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <!-- Favicons -->
+    <link href="{% static 'img/logo.png' %}" rel ="icon"/>
+</head>
+<body>
+
+     <!--header-->
+     <header>
+        <nav>
+            <!--left navbar-->
+            <div class="left-navbar">
+                <div class="logo">
+                    <img src="{% static 'img/logo.png' %}" alt="">
+                </div>
+            </div>
+            <!--middle left navbar-->
+            <div class="middle-navbar">
+                <!--icon-->
+                <div class="icon">
+                    <i class='bx bx-search'></i>
+                </div>
+                <!--input filed-->
+                <div class="input">
+                    <input type="text" placeholder="Search products, brands and categories">
+                </div>
+            </div>
+            <!--right navbar-->
+            <div class="right-navbar">
+                <div class="search-btn">
+                    <button>Search</button>
+                </div>
+
+                <div class="icons icons-js">
+                    <div class="clear"> 
+                        <i class='bx bx-x'></i>
+                        </div>
+                    <div>
+                        <a href="##"> <i class='bx bx-cart' ></i></a>
+                       
+                    <button><a href="{% url 'login' %}">Log in</a> </button>
+                    </div>
+                    
+                    <div>
+                        <button><a href="{% url 'signup' %}">Sign up</a></button>
+                        <div class="user">
+                            <i class='bx bxs-user-circle'></i>
+                        </div>
+                      
+                    </div>
+                   
+                   
+                </div>
+                <!--humber menu-->
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--header ends-->
+
+    
+    <!-- header-end -->
+    <!-- hero -->
+    <section class="hero-section">
+        <div class="flex">
+            <img src="{% static 'img/Vector.png' %}" alt="" class="hero-ham">
+            <div class="text">
+                <h2>X-BETA</h2>
+                <p>Gear Up with the Best Gadgets</p>
+                <a href="{% url 'products' %}">
+                    <button class="button">Shop Now!!!!</button>
+                </a>
+            </div>
+            <div></div>
+            </div>
+
+        <img src="{% static 'img/image 1.png' %}" alt="" class="ab">
+    </section>
+    <!-- hero-end -->
+
+    <!--product section/ main-->
+    <main class="main-section">
+        <div class="img-container">
+            <img src="{% static 'img/Vector(2).png' %}" alt="image 2" class="left-image">
+            <img src="{% static 'img/Vector (1).png' %}" alt="image 3" class="right-image">
+            <img src="{% static 'img/camera-img.jpg' %}" alt="image 1" class="main-image">
+        </div>
+        <div class="write-up-container">
+          <div class="write-up">
+            <h2 class="write-up-heading">Powering Your World with Tech Innovation</h2>
+            <p class="write-up-body"><img src="{% static 'img/transparent.jpeg' %}" alt="transparent image" class="transparent-image">Dive into our extensive range of tech gadgets, from the latest smartphones and smartwatches to home automation systems and gaming gear. Each product is carefully selected to ensure it meets our high standards of quality and performance, providing you with a superior tech experience.</p> 
+          </div>
+        </div>
+        <div class="image-heading-container">
+          <h2 class="image-heading">Our Products</h2>
+        </div> 
+        <div class="slide-container" id="slide-container">  
+            <div class="slides" data-slide="0"><img src="{% static 'img/laptop.png' %}" alt="Image 1" class="image"><span class="image-label">Laptop</span></div>
+            <div class="slides" data-slide="1"><img src="{% static 'img/camera.jpg' %}" alt="Image 2" class="image"><span class="image-label">Camera</span></div>
+            <div class="slides" data-slide="2"><img src="{% static 'img/phone.jpg' %}" alt="Image 3" class="image"><span class="image-label">Phone</span></div>
+            <div class="slides" data-slide="3"><img src="{% static 'img/solar panel.jfif' %}" alt="Image 4" class="image"><span class="image-label">Solar Panel</span></div>
+            <div class="slides" data-slide="4"><img src="{% static 'img/headphones.jfif' %}" alt="Image 5" class="image"><span class="image-label">Headphones</span></div>
+            <div class="slides" data-slide="5"><img src="{% static 'img/dvd player.jfif' %}" alt="Image 6" class="image"><span class="image-label">DVD Player</span></div>
+            <div class="slides" data-slide="6"><img src="{% static 'img/inverter.jfif' %}" alt="Image 7" class="image"><span class="image-label">inverter</span></div>
+            <div class="slides" data-slide="7"><img src="{% static 'img/macbook.jfif' %}" alt="Image 8" class="image"><span class="image-label">Macbook</span></div>
+            <div class="slides" data-slide="8"><img src="{% static 'img/ringlight.jfif' %}" alt="Image 9" class="image"><span class="image-label">Ringlight</span></div>
+            <div class="slides" data-slide="9"><img src="{% static 'img/tv.jfif' %}" alt="Image 10" class="image"><span class="image-label">Television</span></div>
+        </div>
+        <div class="buttons">
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
+        </div>
+    </main>
+
+    <!--product end-->
+
+    <div class="footer">
+        <div class="footer-left">
+            <div class="logo">
+                <img src="{% static 'img/logo.png' %}" alt="X-Beta Logo" width="50">
+            </div>
+            <ul>
+                <li><strong>X-Beta</strong></li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Help and Support</li>
+            </ul>
+        </div>
+        <div class="center">
+            <p>Follow us on our social media platforms</p>
+            <div>
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGTbC_OxfoAq5LP5zMcu1V_reTBxE12RtfwWj9JrfiuN88FDEw&s" alt="Facebook" width="24" height="24"></a>
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSINNCytXv2xJkIoaPS2VH7WUTWnZ-g2wgBhYHyy2xtMtBCPx8&s" alt="Instagram" width="24" height="24"></a>
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1QNpzD5uZc99TzEJcJpr9rjSRdVa78iNptDWaPKxD9TZPJBE&s" alt="Twitter" width="24" height="24"></a>
+            </div>
+            <p>&copy; X-Beta 2024</p>
+        </div>
+        <div class="right">
+            <a href="#">Become a Vendor</a>
+        </div>
+    </div>
+
+
+    <script src="{% static 'js/home.js' %}"></script>
+</body>
+</html>
