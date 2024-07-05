@@ -41,6 +41,5 @@ def login_view(request):
             login(request, user)
             return redirect('home')
         else:
-            return render(request, 'login.html', {'error': 'Invalid email or password'})
-
+            return render(request, 'login.html', {'error': 'Invalid email or password'})       
     return render(request, 'login.html')
