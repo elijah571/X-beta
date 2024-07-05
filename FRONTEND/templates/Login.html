@@ -1,24 +1,29 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <!-- Favicons -->
+    <link href="{% static 'img/logo.png' %}" rel ="icon"/>
 </head>
 <body>
     <div class="container">
         <div class="signin-form">
             <div class="logo">
-            <a href=""><img src="img/logo.png" alt="" class=""></a>
+            <a href=""><img src="{% static 'img/logo.png' %}" alt="" class=""></a>
             </div>
             <h2>Welcome to X-Beta </h2>
-            <p>Type your e-mail or phone number to log into your X-Beta account</p>
-            <form>
+            <p>Type your e-mail to log into your X-Beta account</p>
+            <form method="POST" action="{% url 'login' %}">
+                {% csrf_token %}
+                
                 <div class="input-group">
                     <label for="email"></label>
                     
-                    <input type="email" id="email" placeholder="Email or Phone Number" name="username" required>
+                    <input type="email" id="email" placeholder="Email" name="username" required>
                    
                 
                 </div>
@@ -27,13 +32,16 @@
                     <div class="flex">
                         
                     <input type="password" id="password" name="password" placeholder="Password" required>
-                    <img src="../FRONTEND/img/arcticons_password.png" alt="">
+                    <img src="{% static 'img/arcticons_password.png' %}" alt="">
                     </div>
                 </div>
                 <button type="submit">Log in</button>
+                {% if error %}
+                    <p>{{ error }}</p>
+                {% endif %}
 
             </form>
-            <a href="signup.html">
+            <a href="{% url 'signup' %}">
 
                 <p>
                 Dont have an account? sign up
@@ -46,14 +54,13 @@
                 </p>
             </a>
             <div class="x-beta">
-            <a href="home.html">X-BETA
-                <span><img src="../FRONTEND/img/logo2.png" alt=""></span>
+            <a href="{% url 'home' %}">X-BETA
+                <span><img src="{% static 'img/logo2.png' %}" alt=""></span>
             </a>
             </div>
 
 
 
-            
         </div>
     </div>
 

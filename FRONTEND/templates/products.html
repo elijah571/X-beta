@@ -1,10 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/products.css">
+    <title>Product List</title>
+    <link rel="stylesheet" href="{% static 'css/productscss' %}">
+    <!-- Favicons -->
+    <link href="{% static 'img/logo.png' %}" rel ="icon"/>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -14,7 +17,7 @@
             <!--left navbar-->
             <div class="left-navbar">
                 <div class="logo">
-                    <img src="img/logo.png" alt="">
+                    <img src="{% static 'img/logo.png' %}" alt="">
                 </div>
             </div>
             <!--middle left navbar-->
@@ -41,11 +44,11 @@
                     <div>
                         <a href="##"> <i class='bx bx-cart' ></i></a>
                        
-                    <button><a href="Login.html">Log in</a> </button>
+                    <button><a href="{% url 'login' %}">Log in</a> </button>
                     </div>
                     
                     <div>
-                        <button><a href="signup.html">Sign up</a></button>
+                        <button><a href="{% url 'signup' %}">Sign up</a></button>
                         <div class="user">
                             <i class='bx bxs-user-circle'></i>
                         </div>
@@ -83,7 +86,7 @@
 
 
                 <div class="advert-product">
-                    <img src="img/electronic-img.png" alt="">
+                    <img src="{% static 'img/electronic-img.png' %}" alt="">
                 </div>
             </div>
         </div>
@@ -106,14 +109,14 @@
        <div class="official-store">
             <h2>Official Store</h2>
             <div class="official-products">
-                <div><img src="img/hp-img.png" alt=""></div>
-                <div><img src="img/apple-img.png" alt=""></div>
-                <div><img src="img/infinix-img.png" alt=""></div>
-                <div><img src="img/samsung-img.png" alt=""></div>
-                <div><img src="img/ring-img.png" alt=""></div>
-                <div><img src="img/itech-img.png" alt=""></div>
-                <div><img src="img/vivo-img.png" alt=""></div>
-                <div><img src="img/levenovo-img.png" alt=""></div>
+                <div><img src="{% static 'img/hp-img.png' %}" alt=""></div>
+                <div><img src="{% static 'img/apple-img.png' %}" alt=""></div>
+                <div><img src="{% static 'img/infinix-img.png' %}" alt=""></div>
+                <div><img src="{% static 'img/samsung-img.png' %}" alt=""></div>
+                <div><img src="{% static 'img/ring-img.png' %}" alt=""></div>
+                <div><img src="{% static 'img/itech-img.png' %}" alt=""></div>
+                <div><img src="{% static 'img/vivo-img.png' %}" alt=""></div>
+                <div><img src="{% static 'img/levenovo-img.png' %}" alt=""></div>
             </div>
     </div>
         <!-- official ends -->
@@ -125,7 +128,6 @@
         <div class="left">
             <ul>
                 <li><strong>X-Beta</strong></li>  
-                <li>About Us</li>
                 <li>About Us</li>
                 <li>Contact Us</li>
                 <li>Help and Support</li>
@@ -146,6 +148,6 @@
     </div>
     <!-- end -->
 
-    <script src="scripts/products.js"></script>
+    <script src="{% url 'js/products.js %}"></script>
 </body>
 </html>

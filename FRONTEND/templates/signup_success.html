@@ -1,23 +1,27 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Account</title>
-    <link rel="stylesheet" href="../FRONTEND/styles/acctcreated.css">
+    <title>Signup Successful</title>
+    <link rel="stylesheet" href="{% static 'css/acctcreated.css' %}">
+    <!-- Favicons -->
+    <link href="{% static 'img/logo.png' %}" rel ="icon"/>
 </head>
 <body>
     <div class="container">
         <div class="signin-form">
             <div class="logo ">
-            <a href=""><img src="../FRONTEND/img/logo.png" alt="" class=""></a>
+                <a href=""><img src="{% static 'img/logo.png' %}" alt="" class=""></a>
             </div>
-            <h2>Congratulations!</h2>
-            <p>Peter your account has been sucessfully created.</p>
+            <h2>Congratulations, {{ user.first_name }}!</h2>
+
+            <p>You have successfully signed up. Now, please <a href="{% url 'login' %}">login</a> to continue.</p>
             <div style="display: flex; justify-content: center; margin-bottom: 1rem;margin-top: .5rem;">
-            <img src="../FRONTEND/img/Rectangle 11@2x.png" alt="" style="width: 80%; ">
+            <img src="{% static 'img/Rectangle 11@2x.png' %}" alt="" style="width: 80%; ">
             </div>
-            <button type="submit">Continue</button>
+            <button type="submit" href="{% url 'login' %}">Continue</button>
 
           
             <a href="" style="margin-bottom: 1rem;">
@@ -27,12 +31,10 @@
             </a>
             <div class="x-beta">
             <a href="">X-BETA
-                <span><img src="../FRONTEND/img/logo2.png" alt=""></span>
+                <span><img src="{% static 'img/logo2.png' %}" alt=""></span>
             </a>
             </div>
             
-
-
 
             
         </div>

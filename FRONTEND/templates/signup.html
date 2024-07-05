@@ -1,20 +1,27 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>signup</title>
-    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <!-- Favicons -->
+    <link href="{% static 'img/logo.png' %}" rel ="icon"/>
 </head>
 <body>
     <div class="container">
         <div class="signin-form">
             <div class="logo">
-            <a href=""><img src="../FRONTEND/img/logo.png" alt="" class=""></a>
+            <a href=""><img src="{% static 'img/logo.png' %}" alt="" class=""></a>
             </div>
             <h2>Welcome to X-Beta </h2>
-            <p>Type your e-mail or phone number to log into your X-Beta account</p>
-            <form>
+            <p>Type your e-mail or phone number to create your X-Beta account</p>
+            <form method="POST" action="{% url 'signup' %}">
+                {% csrf_token %}
+                {% if error %}
+                    <p style="color: red;">{{ error }}</p>
+                {% endif %}
                 <div class="input-group">
                     <label for="fname"></label>
                     
@@ -28,18 +35,33 @@
                    
                 
                 </div>
+
                 <div class="input-group">
                     <label for="email"></label>
                     <div class="flex">
                         
-                    <input type="email" id="password" name="password" placeholder="Email*" required>
+                    <input type="email" id="email" placeholder="Email*" name="email" required>
                     <!-- <img src="../X-beta/FRONTEND/img/arcticons_password.png" alt=""> -->
                     </div>
                 </div>
-                <button type="submit">Sign up</button>
+
+                <div class=" input-group">
+                    <label for="phone_number" ></label>
+
+                    <input type="text" id="phone_number" name="phone_number" placeholder="Phone number*" required>
+                </div>
+
+                <div class=" input-group">
+                    <label for="password" ></label>
+
+                    <input type="password" id="password" name="password" placeholder="Password*" required>
+                </div>
+
+
+                <button type="submit">CREATE ACCOUNT</button>
 
             </form>
-            <a href="Login.html">
+            <a href="{% url 'login' %}">
 
                 <p>
                 have an account? log in
@@ -52,8 +74,8 @@
                 </p>
             </a>
             <div class="x-beta">
-            <a href="home.html">X-BETA
-                <span><img src="../FRONTEND/img/logo2.png" alt=""></span>
+            <a href="{% url 'home' %}">X-BETA
+                <span><img src="{% static 'img/logo2.png' %}" alt=""></span>
             </a>
             </div>
             

@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib.auth import login, authenticate
+from django.db import IntegrityError
 
 def home(request):
     return render(request, 'home.html')
@@ -13,11 +14,17 @@ def signup_view(request):
         password = request.POST.get('password')
         phone_number = request.POST.get('phone_number')
 
-        user = User.objects.create_user(username=email, email=email, password=password, first_name=fname, last_name=lname)
-        user.profile.phone_number = phone_number
-        user.save()
-        login(request, user)
-        return redirect('signup_success', user_id=user.id)
+        try:
+            if User.objects.filter(username=email).exists():
+                return render(request, 'signup.html', {'error': 'Email already exit'})
+
+            user = User.objects.create_user(username=email, email=email, password=password, first_name=fname, last_name=lname)
+            user.profile.phone_number = phone_number
+            user.profile.save()
+
+            return redirect('signup_success', user_id=user.id)
+        except IntegrityError:
+            return render(request, 'signup.html', {'error': 'An error occurred during signup. Please try again.'})
 
     return render(request, 'signup.html')
 
