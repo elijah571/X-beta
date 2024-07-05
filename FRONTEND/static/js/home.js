@@ -1,11 +1,15 @@
- document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.hamburger');
-    const nav = document.querySelector('header .nav');
+// header section
+const menuBtn = document.querySelector(".menu");
+const clearBtn = document.querySelector(".clear");
+const icons = document.querySelector(".icons-js");
 
-    hamburger.addEventListener('click', function() {
-        hamburger.classList.toggle('active');
-        nav.classList.toggle('active');
-    });
+menuBtn.addEventListener("click", () => {
+    icons.style.display = 'block';
+   
+});
+clearBtn.addEventListener("click", () => {
+    icons.style.display = 'none';
+   
 });
 
 // Access the Images
