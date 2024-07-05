@@ -1,7 +1,9 @@
 ## About
+
 This project is a complete eCommerce web application built to demonstrate the capabilities of modern web development frameworks (Django). The application includes features like product listing, shopping cart, user authentication, and order management.
 
 ## Features
+
 - User Authentication (Register/Login)
 - Product Listing and Details
 - Shopping Cart
@@ -12,14 +14,18 @@ This project is a complete eCommerce web application built to demonstrate the ca
 - Payment Gateway Integration
 
 ## Technologies
+
 - Frontend:
-    - Html
-    - CSS
+
+  - Html
+  - CSS
 
 - Backend:
-    - Django
-    - Sqlite
+  - Django
+  - Sqlite
 
 ## Contact
+
 Olayiwola Sulaimon - osulaimon19@yahoo.com
 Alfred Makura - inforamaiv@gmail.com
+Buyeke Obare (Backend) - buyekeobare@gmail.com
