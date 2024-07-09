@@ -45,7 +45,186 @@ header nav .right-nav{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 120px;
-    margin-top: 60px;
-    font-size: 40px;
+    /* height: 120px; */
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+/* product Delivey details */
+section{
+    width: 100%;
+    margin:30px 65px;
+    display: flex;
+    /* align-items: center; */
+    gap: 30px;
+}
+section .delivery-details{
+    width: 50%;
+}
+section .delivery-details .customer-address{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+section .delivery-details .address{
+    background-color: #D9D9D9;
+    display: flex;
+    gap: 20px;
+    padding: 10px 12px;
+    /* width: 400px; */
+    margin-bottom:5px;
+    text-transform: uppercase;
+}
+section .delivery-details .address .icon{
+    background-color: green;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section .delivery-details .address .icon .bx{
+    font-size: 15px;
+    color: #ffff;
+}
+section .delivery-details .place{
+    background-color: #D9D9D9;
+    padding: 15px 10px;
+
+}
+section .delivery-details .place .peter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+section .delivery-details .place p{
+    margin-top: 20px;
+    width:100%;
+    word-spacing: 15px;
+    font-weight: lighter;
+}
+section .delivery-items-details{
+    margin-top: 10px;
+}
+section .delivery-pickup-station{
+    background-color: #D9D9D9;
+    padding: 15px 12px;
+}
+section .delivery-pickup-station h5 span{
+    font-weight: lighter;
+
+}
+section .delivery-pickup-station  p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+section .delivery-pickup-station > div{
+    margin-top: 20px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+section .delivery-pickup-station > div{
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+}
+section .delivery-pickup-station > div small span{
+   margin-left: 280px;
+}
+section .delivery-pickup-station > div .products{
+    border: 1px solid black;
+    padding: 10px;
+    /* width: 60%; */
+}
+section .delivery-pickup-station > div .products h4{
+    font-size: 13px;
+}
+
+section .delivery-pickup-station > div .products .product{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+section .delivery-pickup-station > div .products .product img{
+    width: 100px;
+}
+/* Order Summary */
+section .order-summary{
+    width: 30%;
+  
+}
+section .order-summary .summary{
+    background-color: #D9D9D9;
+    padding: 10px 15px;
+}
+section .order-summary .summary h3{
+    font-size: 16px;
+    text-align: center;
+}
+section .order-summary .cost{
+    margin-top: 5px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+section .order-summary .cost > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section .order-summary .total{
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+section .order-summary button{
+    text-align: center;
+    align-items: centers;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 140px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #340034;
+    color: #ffff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+@media screen and (max-width:678px) {
+section{
+    width: 100%;
+    margin: 0;
+}
+section .delivery-details{
+    width: 70%;
+} 
+section .order-summary{
+    width: 100%;
+    margin: 0;
+}
+section .order-summarry .summary{
+    width: 100%;
+}
+section .order-summarry .cost,  .total{
+    width: 100%;
+}
+section .order-summary button{
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   margin-left: 0;
+   padding: 10px 15px;
+
+}
 }
