@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib.auth import login, authenticate
 from django.db import IntegrityError
+from rest_framework_simplejwt.tokens import RefreshToken
+from django.http import JsonResponse
 
 def home(request):
     return render(request, 'home.html')
@@ -39,7 +41,11 @@ def login_view(request):
         user = authenticate(request, username=email, password=password)
         if user is not None:
             login(request, user)
-            return redirect('home')
+            refresh = RefreshToken.for_user(user)
+            return JsonResponse({
+                'refresh': str(refresh),
+                'access': str(refresh.access_token),
+            })
         else:
-            return render(request, 'login.html', {'error': 'Invalid email or password'})       
+            return render(request, 'login.html', {'error': 'Invalid email or password'})
     return render(request, 'login.html')
