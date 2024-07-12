@@ -18,7 +18,7 @@ def signup_view(request):
 
         try:
             if User.objects.filter(username=email).exists():
-                return render(request, 'signup.html', {'error': 'Email already exit'})
+                return render(request, 'signup.html', {'error': 'Email already exists'})
 
             user = User.objects.create_user(username=email, email=email, password=password, first_name=fname, last_name=lname)
             user.profile.phone_number = phone_number
