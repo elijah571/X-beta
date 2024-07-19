@@ -1,0 +1,22 @@
+Step 1
+cloned the repo
+
+Step 2
+cd BACKEND
+
+
+Step 3
+create/activate your virtual environment
+
+Step 4
+pip install Django==4.2.13
+
+Step 5
+check the version with 'Django-admin --version'
+
+Step 6
+echo "yourvirtualenvironmentname/' > .gitignore
+code .gitignore
+
+Step 7
+git add, commit and push

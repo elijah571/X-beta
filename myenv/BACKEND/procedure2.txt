@@ -1,0 +1,4 @@
+cd BACKEND
+myvenv\scripts\activate
+python manage.py runserver
+copy and enter in your browser https://127.0.0.1:8000/
