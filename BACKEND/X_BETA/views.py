@@ -49,3 +49,6 @@ def login_view(request):
         else:
             return render(request, 'login.html', {'error': 'Invalid email or password'})
     return render(request, 'login.html')
+
+def product_detail(request, product_id):
+    return render(request, 'product_details.html', {'product_id': product_id})
