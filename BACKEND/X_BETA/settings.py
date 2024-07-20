@@ -74,8 +74,12 @@ SIMPLE_JWT = {
 
 # Authentication backends
 AUTHENTICATION_BACKENDS = [
+    'accounts.authentication.EmailBackend',
     'django.contrib.auth.backends.ModelBackend',
 ]
+
+LOGIN_REDIRECT_URL = '/'  # Redirect to home page after login
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
