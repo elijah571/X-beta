@@ -1,20 +1,21 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../static/css/product_details.css">
+    <link rel="stylesheet" href="{% static 'css/product_details.css' %}">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-       <!--header-->
-       <header>
+    <!--header-->
+    <header>
         <nav>
             <!--left navbar-->
             <div class="left-navbar">
                 <div class="logo">
-                    <img src="/X-beta/FRONTEND/static/img/logo.png" alt="">
+                    <img src="{% static 'img/logo.png' %}" alt="">
                 </div>
             </div>
             <!--middle left navbar-->
@@ -68,30 +69,32 @@
             </div>
             <p>X-Beta</p>
         </div>
-         <!-- hero ends-->
-          <!-- product sections -->
-          <div class="product-section">
+    </div>
+    <!-- hero ends-->
+    <div id="product-id" style="display: none;">{{ product_id }}</div>
+    <!-- product sections -->
+        <div class="product-section">
             <div class="product">
                 <div class="left-product-section">
                     <!-- product images -->
                     <div class="product-images">
                         <!--main image-->
                     <div class="image">
-                        <img src="/X-beta/FRONTEND/static/img/car-charger-img.jpg" alt="">
+                        <img src="{% static 'img/car-charger-img.jpg' %}" alt="">
                     </div>
                     <div class="mini-img">
                         <div> 
-                            <img src="/X-beta/FRONTEND/static/img/car-charger-img.jpg" alt="">
+                            <img src="{% static 'img/car-charger-img.jpg' %}" alt="">
                         </div>
                         <div>
-                            <img src="/X-beta/FRONTEND/static/img/car-charger-img.jpg" alt="">
+                            <img src="{% static 'img/car-charger-img.jpg' %}" alt="">
                         </div>
                     </div>
-                    </div>
+                </div>
                     <!-- images ends -->
 
                   
-                         <!-- product info -->
+                    <!-- product info -->
                     <div class="product-info">
                         <p>
                             Quick Charge (QC) Chargers: Support Qualcomm’s Quick Charge technology. These can charge compatible devices much faster than standard chargers.
@@ -100,8 +103,7 @@
                         <div class="icon-info">
                             <!-- icon -->
                             <i class='bx bx-info-circle' ></i>
-
-                             <small>3 unit left</small>
+                            <small id="product-stock">3 units left</small>
                         </div>
                         <div class="btn">
                             <a href="##"> <i class='bx bx-cart' ></i></a>
@@ -117,51 +119,51 @@
                         <h3>DELIVERY & RETURNS</h3>
                    </div>
                    <div class="location-text">
-                    <h3>Choose Your Location</h3>
+                        <h3>Choose Your Location</h3>
                    </div>
                    <div class="abuja">
-                    <p>Abuja</p>
-                    <select name="Location" id="address">
-                        <option value=""></option>
-                        <option value="Abuja">Abuja</option>
-                        <option value="Lagos">Lagos</option>
-                        <option value="Kano">Kano</option>
-                        <option value="Rivers">Rivers</option>
-                    </select>
-                   </div>
-                   <div class="asokoro">
-                    <p>Asokoro</p>
-                    <select name="Location" id="address">
-                        <option value=""></option>
-                        <option value="Asokoro">Asokoro</option>
-                        <option value="Kubwa">Kubwa</option>
-                        <option value="Gwagwalada">Gwagwalada</option>
-                        <option value="Kuje">Kuje</option>
-                    </select>
-                   </div>
-                   <div class="pick_up_station">
-                        <img src="img/location-img.png" alt="">
+                        <p>Abuja</p>
+                        <select name="Location" id="address">
+                            <option value=""></option>
+                            <option value="Abuja">Abuja</option>
+                            <option value="Lagos">Lagos</option>
+                            <option value="Kano">Kano</option>
+                            <option value="Rivers">Rivers</option>
+                        </select>
+                    </div>
+                    <div class="asokoro">
+                        <p>Asokoro</p>
+                        <select name="Location" id="address">
+                            <option value=""></option>
+                            <option value="Asokoro">Asokoro</option>
+                            <option value="Kubwa">Kubwa</option>
+                            <option value="Gwagwalada">Gwagwalada</option>
+                            <option value="Kuje">Kuje</option>
+                        </select>
+                    </div>
+                    <div class="pick_up_station">
+                        <img src="{% static 'img/location-img.png' %}" alt="">
                         <div class="station">
                             <p>Pick up Station</p>
                             <a href="#">Details....</a>
                         </div>
-                   </div>
+                    </div>
 
-                   <div class="delivery-place">
+                    <div class="delivery-place">
                         <div class="img">
-                            <img src="img/place-img.png" alt="">
+                            <img src="{% static 'img/place-img.png' %}" alt="">
                         </div>
                         <div class="door-delivery">
                             <p>Door delivery</p>
                             <a href="#">Detailss....</a>
                         </div>
-                   </div>
+                    </div>
                 </div>
             </div>
             <!-- details -->
-             <div class="product-details">
+            <div class="product-details">
                <h2>Product details</h2>
-               <div class="details">
+               <div class="details" id="product-full-details">
                 <div>
                     <h3>Power Output:</h3>
                     <p>Wattage: Higher wattage means faster charging. Standard USB ports typically offer 5W, while fast chargers can offer 18W, 30W, or even higher.
@@ -195,31 +197,31 @@
                     <!--box1-->
                     <div class="box">
                         <div class="image">
-                            <img src="/X-beta/FRONTEND/static/img/graphic-drawer-img.jpg">
+                            <img src="{% static 'img/graphic-drawer-img.jpg' %}">
                         </div>
                         <p class="name">Graphic drawer</p>
-                        <p class="price">$60,450</p>
+                        <p class="price">60450</p>
                     </div>
                      <!--box2-->
                      <div class="box">
                         <div class="image">
-                            <img src="/X-beta/FRONTEND/static/img/oraimo-img.jpg" alt="">
+                            <img src="{% static 'img/oraimo-img.jpg' %}" alt="">
                         </div>
                         <p class="name">Oraimo TWS</p>
-                        <p class="price">$13000</p>
+                        <p class="price">13000</p>
                     </div>
                       <!--box3-->
                       <div class="box">
                         <div class="image">
-                            <img src="/X-beta/FRONTEND/static/img/samsum-img.jpg" alt="">
+                            <img src="{% static 'img/samsum-img.jpg' %}" alt="">
                         </div>
                         <p class="name">Samsung Galaxy A05</p>
-                        <p class="price">$104999</p>
+                        <p class="price">104999</p>
                     </div>
                        <!--box4-->
                        <div class="box">
                         <div class="image">
-                            <img src="/X-beta/FRONTEND/static/img/ace-img.jpg" alt="">
+                            <img src="{% static 'img/ace-img.jpg' %}" alt="">
                         </div>
                         <p class="name">Ace Elec 200000 MAh</p>
                         <p class="price">$8500</p>
@@ -234,7 +236,7 @@
            <div class="footer">
             <div class="footer-left">
                 <div class="logo">
-                    <img src="img/logo.png" alt="X-Beta Logo" width="50">
+                    <img src="{% static 'img/logo.png' %}" alt="X-Beta Logo" width="50">
                 </div>
                 <ul>
                     <li><strong>X-Beta</strong></li>
@@ -258,6 +260,6 @@
         </div>
     
     
-    <script src="scripts/product_details.js"></script>    
+    <script src="{% static 'js/product_details.js' %}"></script>    
 </body>
 </html>

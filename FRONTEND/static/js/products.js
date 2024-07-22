@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
     products.forEach((product) => {
         productHTML += `
             <div class="product">
-                <a href="product_details.html">
+                <a href="product_details.html?id=${product.id}">
                     <div class="product-img">
                         <img src="${product.image}">
                     </div>
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
                 const productElement = button.closest('.product');
                 const productId = productElement.dataset.productId;
-                window.location.href = `/product/${productId}`;
+                window.location.href = `product_details.html?id=${productId}`;
             }
         });
     });
