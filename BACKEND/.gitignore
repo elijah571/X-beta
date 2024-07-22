@@ -1,6 +1,6 @@
 Virtual environments
 .venv
 myvenv  # Buyeke
-myenv
+myenv/
 
 .env
