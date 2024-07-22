@@ -2,7 +2,8 @@
     "builds": [
         {
             "src": "BACKEND/X_BETA/manage.py",
-            "use": "@vercel/python"
+            "use": "@vercel/python",
+            "config": { "buildCommand": "pip install -r BACKEND/requirements.txt && python BACKEND/manage.py collectstatic" }
         },
         {
             "src": "BACKEND/X_BETA/wsgi.py",
