@@ -1,6 +1,10 @@
 {
     "builds": [
         {
+            "src": "BACKEND/X_BETA/manage.py",
+            "use": "@vercel/python"
+        },
+        {
             "src": "BACKEND/X_BETA/wsgi.py",
             "use": "@vercel/python"
         }
