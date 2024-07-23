@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.signin-form {
+    width: 400px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    
+
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #000000;
+font-weight: 700;
+Line-height:21px;
+
+}
+p{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #000000;
+font-weight: 400;
+Line-height:18px;
+
+
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+form{
+    margin-bottom: 2.5rem;
+}
+
+
+.input-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #E6CCE6;
+    background-color: #E6CCE6;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+.input-group input .confirm{
+    border: 1px solid #B366B3;
+    background-color: #B366B3;
+    color: #ffff;
+
+}
+
+
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background: #340034;
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #340034;
+    transform: scale(1.05);
+}
+.x-beta {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.x-beta a{
+font-size: 32px;
+font-weight: 500;
+/* line-height: 48px; */
+margin-bottom: 1rem;
+
+}
+.flex {
+    display: flex;
+    align-items: center; /* Align items vertically center */
+    position: relative; /* Ensure proper positioning */
+}
+.flex  img{
+
+        position: absolute;
+        width: 7%;
+        right: 5px; /* Adjust as per your design */
+        height: 100%; /* Match input height */
+        margin-right: 5px; /* Adjust spacing */
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
